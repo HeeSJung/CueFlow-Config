@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-21T00:00:00Z",
+  "platforms": {
+    "chatgpt": {
+      "userPrompt": "[data-message-author-role='user'] .whitespace-pre-wrap",
+      "messageContainer": "[data-message-author-role='user']",
+      "chatContainer": "main .flex.flex-col",
+      "attachmentIndicator": "[class*='file-tile'], [class*='attachment']",
+      "headerTarget": "header .flex.items-center.justify-end.gap-2",
+      "promptTextContent": ".whitespace-pre-wrap",
+      "chatInput": "#prompt-textarea",
+      "chatInputMethod": "contenteditable",
+      "sendButton": "button[data-testid=\"send-button\"]"
+    },
+    "claude": {
+      "userPrompt": "[data-testid='user-message']",
+      "messageContainer": "[data-testid='user-message']",
+      "chatContainer": "[class*='conversation'], [class*='overflow-y-auto']",
+      "attachmentIndicator": "[class*='thumbnail'], [class*='file-upload']",
+      "headerTarget": "div.fixed.right-3, div.md\\:absolute.md\\:right-0.md\\:top-0",
+      "promptTextContent": "[data-testid='user-message']",
+      "chatInput": "div.ProseMirror[contenteditable=\"true\"]",
+      "chatInputMethod": "contenteditable",
+      "sendButton": "button[aria-label=\"Send Message\"], button[aria-label=\"Send message\"], button[data-testid=\"send-button\"]"
+    },
+    "gemini": {
+      "userPrompt": "user-query .query-text",
+      "messageContainer": "user-query",
+      "chatContainer": ".conversation-container",
+      "attachmentIndicator": ".attachment-chip, [class*=\"file-chip\"]",
+      "headerTarget": ".top-bar-actions .right-section .buttons-container:last-child",
+      "promptTextContent": "user-query .query-text",
+      "chatInput": ".ql-editor[contenteditable=\"true\"]",
+      "chatInputMethod": "contenteditable",
+      "sendButton": "button.send-button, button[aria-label=\"Send message\"]"
+    },
+    "perplexity": {
+      "userPrompt": "[role=\"tabpanel\"] h2",
+      "messageContainer": "[role=\"tabpanel\"]:has(h2)",
+      "chatContainer": "main",
+      "attachmentIndicator": "",
+      "headerTarget": "",
+      "promptTextContent": "[role=\"tabpanel\"] h2",
+      "chatInput": "div[contenteditable=\"true\"][role=\"textbox\"]",
+      "chatInputMethod": "contenteditable",
+      "sendButton": "button[aria-label=\"Submit\"]"
+    }
+  }
+}
