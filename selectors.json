@@ -40,7 +40,7 @@
       "messageContainer": "div.group\\/title",
       "chatContainer": "main",
       "attachmentIndicator": "",
-      "headerTarget": "div.pr-md.flex-shrink-0",
+      "headerTarget": "div.gap-x-sm.pointer-events-auto.justify-end",
       "promptTextContent": "h1.group\\/query span",
       "chatInput": "div[contenteditable=\"true\"][role=\"textbox\"]",
       "chatInputMethod": "contenteditable",
