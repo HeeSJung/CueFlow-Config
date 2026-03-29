@@ -7,7 +7,7 @@
       "messageContainer": "[data-message-author-role='user']",
       "chatContainer": "main .flex.flex-col",
       "attachmentIndicator": "[class*='file-tile'], [class*='attachment']",
-      "headerTarget": "div.flex.items-center.justify-center.gap-3.overflow-x-hidden",
+      "headerTarget": "[data-testid='thread-header-right-actions'], div#conversation-header-actions",
       "promptTextContent": ".whitespace-pre-wrap",
       "chatInput": "#prompt-textarea",
       "chatInputMethod": "contenteditable",
