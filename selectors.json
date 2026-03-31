@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-03-29T00:00:00Z",
+  "lastUpdated": "2026-03-31T00:00:00Z",
   "platforms": {
     "chatgpt": {
       "userPrompt": "[data-message-author-role='user'] .whitespace-pre-wrap",
@@ -40,7 +40,7 @@
       "messageContainer": "div.group\\/title",
       "chatContainer": "main",
       "attachmentIndicator": "",
-      "headerTarget": "div.gap-x-sm.pointer-events-auto.justify-end",
+      "headerTarget": "div.gap-x-sm.pointer-events-auto.justify-end, div.h-headerHeight.right-md.z-20",
       "promptTextContent": "h1.group\\/query span",
       "chatInput": "div[contenteditable=\"true\"][role=\"textbox\"]",
       "chatInputMethod": "contenteditable",
